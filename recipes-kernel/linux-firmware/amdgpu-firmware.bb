@@ -29,8 +29,8 @@ do_compile() {
 }
 
 do_install() {
-	install -v -m 444 -D ${S}/LICENSE.amdgpu ${D}/lib/firmware/amdgpu/LICENSE
-	install -v -m 0644 ${S}/*.bin ${D}/lib/firmware/amdgpu
+	install -v -m 444 -D ${S}/LICENSE.amdgpu ${D}/lib/firmware/radeon/LICENSE
+	install -v -m 0644 ${S}/*.bin ${D}/lib/firmware/radeon
 }
 
 FILES_${PN} = "/lib/firmware/*"
