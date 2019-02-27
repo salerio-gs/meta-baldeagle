@@ -13,10 +13,10 @@ SRC_URI = " \
 	file://kaveri_sdma1.bin \
 	file://kaveri_uvd.bin \
 	file://kaveri_vce.bin \
-	file://LICENSE.radeon \
+	file://LICENSE.amdgpu \
     "
 
-LIC_FILES_CHKSUM = "file://LICENSE.radeon;md5=68ec28bacb3613200bca44f404c69b16"
+LIC_FILES_CHKSUM = "file://LICENSE.amdgpu;md5=ab515ef6495ab5c5a3b08ab2db62df11"
 
 S = "${WORKDIR}"
 
@@ -29,8 +29,8 @@ do_compile() {
 }
 
 do_install() {
-	install -v -m 444 -D ${S}/LICENSE.radeon ${D}/lib/firmware/radeon/LICENSE
-	install -v -m 0644 ${S}/*.bin ${D}/lib/firmware/radeon/
+	install -v -m 444 -D ${S}/LICENSE.amdgpu ${D}/lib/firmware/amdgpu/LICENSE
+	install -v -m 0644 ${S}/*.bin ${D}/lib/firmware/amdgpu/
 }
 
 FILES_${PN} = "/lib/firmware/*"
