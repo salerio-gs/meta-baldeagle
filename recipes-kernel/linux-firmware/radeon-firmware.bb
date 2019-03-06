@@ -10,9 +10,8 @@ SRC_URI = " \
 	file://kaveri_pfp.bin \
 	file://kaveri_rlc.bin \
 	file://kaveri_sdma.bin \
-	file://kaveri_sdma1.bin \
-	file://kaveri_uvd.bin \
-	file://kaveri_vce.bin \
+	file://BONAIRE_uvd.bin \
+	file://BONAIRE_vce.bin \
 	file://LICENSE.radeon \
     "
 
