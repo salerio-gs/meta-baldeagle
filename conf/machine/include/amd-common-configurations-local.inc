@@ -13,8 +13,8 @@ PREFERRED_PROVIDER_llvm ?= "llvm7"
 MESA_LLVM_RELEASE_amd = "7"
 CLAMAV_LLVM_RELEASE_amd = "7"
 
-MULTILIBS ?= ""
-require conf/multilib.conf
+#MULTILIBS ?= ""
+#require conf/multilib.conf
 
 MACHINE_FEATURES += "wifi efi alsa"
 MACHINE_FEATURES += "${@'swupdate' if 'mentor-swupdate' in '${BBFILE_COLLECTIONS}'.split() else '' }"
