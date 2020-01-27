@@ -8,8 +8,9 @@ Please see the README file contained in the root meta-amd directory for general 
 
 ## GPU Driver Support
 
-The recommended GPU driver for the 2nd Generation R-Series APU remains `radeon`, however the `meta-amd`
-layer provides support (in the form of a backported patch set for kernel version 4.14) for the newer `amdgpu`
-driver (see here for kernel configuration details https://wiki.gentoo.org/wiki/AMDGPU). Which driver to use can
-be selected via the cariable `USE_AMDGPU`. Setting this to `"yes"` selects the newer `amdgpu` driver, any other
-value selects the `radeon` driver. The default value is `"no"`.
+The recommended GPU driver for the 2nd Generation R-Series APU when using a 4.14 kernel remains `radeon`,
+however the `meta-amd` layer provides support (in the form of a backported patch set for kernel version 4.14)
+for the newer `amdgpu` driver (see here for kernel configuration details https://wiki.gentoo.org/wiki/AMDGPU).
+The recommended GPU driver for the 2nd Generation R-Series APU when using a 4.19 kernel is `amdgpu`. Which driver
+to use can be selected via the variable `USE_AMDGPU`. Setting this to `"yes"` selects the newer`amdgpu` driver, any
+other value selects the `radeon` driver.
