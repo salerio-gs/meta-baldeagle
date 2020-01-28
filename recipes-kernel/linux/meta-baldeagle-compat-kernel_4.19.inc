@@ -7,5 +7,5 @@ SRC_URI_append = " \
     file://intel-iommu-with-dma-remapping.cfg \
     file://remove-logo.cfg \
     ${@bb.utils.contains("USE_AMDGPU", "yes", "file://amdgpu.cfg", "file://radeon.cfg", d)} \
-    file://not-in-4-19-tweaks.cfg \
+    file://tweaks-4-19.cfg \
     "
