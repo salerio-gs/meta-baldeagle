@@ -21,7 +21,7 @@ APPEND_remove="console=tty0"
 
 # Drop features we do not need
 # :ORIGINAL: DISTRO_FEATURES_remove="opengl x11 alsa pulseaudio"
-DISTRO_FEATURES_remove="opengl alsa pulseaudio"
+DISTRO_FEATURES_remove="alsa pulseaudio"
 
 # :ORIGINAL: MACHINEOVERRIDES =. "amd:amdx86:"
 
