@@ -1,4 +1,4 @@
-LICENSE = "Firmware-amd"
+LICENSE = "Firmware-amd-ucode"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${BPN}:"
 
@@ -8,6 +8,8 @@ SRC_URI = " \
 "
 
 LIC_FILES_CHKSUM = "file://LICENSE.amd-ucode;md5=3c5399dc9148d7f0e1f41e34b69cf14f"
+
+NO_GENERIC_LICENSE[Firmware-amd-ucode] = "LICENSE.amd-ucode"
 
 S = "${WORKDIR}"
 

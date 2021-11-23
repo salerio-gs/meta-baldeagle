@@ -1,6 +1,8 @@
-DESCRIPTION = "These binaries provide kernel support for AMD R7 GPU as found in baldeagle"
+DESCRIPTION = "These binaries provide kernel support for AMD R7 GPU as found in the Baldeagle APU"
+
 SECTION = "kernel"
-LICENSE = "Firmware-amd"
+
+LICENSE = "Firmware-radeon"
 
 SRC_URI = " \
 	file://kaveri_ce.bin \
@@ -17,6 +19,8 @@ SRC_URI = " \
     "
 
 LIC_FILES_CHKSUM = "file://LICENSE.radeon;md5=68ec28bacb3613200bca44f404c69b16"
+
+NO_GENERIC_LICENSE[Firmware-radeon] = "LICENSE.radeon"
 
 S = "${WORKDIR}"
 
