@@ -9,7 +9,8 @@ PREFERRED_VERSION_linux-yocto-rt ?= "5.4%"
 
 # :ORIGINAL: require conf/machine/include/tune-amdx86.inc
 require conf/machine/include/tune-${MACHINE}.inc
-require conf/machine/include/amd-common-configurations.inc
+# :ORIGINAL: require conf/machine/include/amd-common-configurations.inc
+require conf/machine/include/amd-common-configurations-local.inc
 include conf/machine/include/amd-customer-configurations.inc
 
 MACHINE_FEATURES_remove = "alsa"
