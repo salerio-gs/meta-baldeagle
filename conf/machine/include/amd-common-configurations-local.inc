@@ -8,8 +8,8 @@ PREFERRED_PROVIDER_jpeg ?= "jpeg"
 PREFERRED_PROVIDER_jpeg-native ?= "jpeg-native"
 PREFERRED_VERSION_linux-yocto ?= "5.4%"
 
-# MULTILIBS ?= ""
-# require conf/multilib.conf
+# :ORIGINAL: MULTILIBS ?= ""
+# :ORIGINAL: require conf/multilib.conf
 
 MACHINE_FEATURES += "wifi efi alsa"
 
