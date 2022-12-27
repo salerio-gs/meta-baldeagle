@@ -29,6 +29,6 @@ DISTRO_FEATURES_remove="alsa pulseaudio"
 # Mask out recipes for packages we do not support for
 # amdx86 but may be required by others. Use '|' sign
 # between the patterns.
-BBMASK = "\
+BBMASK += "\
 .*/meta-amd/common/recipes-support/libtinyxml\
 "
